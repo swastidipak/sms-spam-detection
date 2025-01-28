@@ -15,8 +15,8 @@ if st.button("Classify"):
         vectorized_data = cv.transform(data).toarray()
         result = model.predict(vectorized_data)
         if result[0]==0:
-            st.write("This email is not spam")
+            st.write("This SMS is not spam.")
         else:
-            st.write("this email is spam")
+            st.write("This SMS is spam.")
     else:
         st.write("Please type email to classify")
