@@ -7,7 +7,7 @@ cv = pickle.load(open('vectorizer.pkl','rb'))
 
 st.title("SMS Spam Detection application")
 st.write('This is a Machine Learning application to classify sms as spam or ham.')
-user_input= st.text_area("Enter an SMS to classify",height=150)
+user_input= st.text_area("Enter SMS to classify",height=150)
 
 if st.button("Classify"):
     if user_input:
